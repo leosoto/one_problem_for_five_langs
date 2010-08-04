@@ -17,7 +17,7 @@ object Retry {
     }
   }
 
-  def retry[R, E <: Exception](times: Int, when: java.lang.Class[E], wait: Int)(body: => R): R = {
+  def retry[R, E <: Exception](times: Int, when: Class[E], wait: Int)(body: => R): R = {
     var lastException:Throwable = null;
     for (i <- 0 until times) {
       try {
