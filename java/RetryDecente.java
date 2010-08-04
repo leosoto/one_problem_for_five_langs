@@ -1,3 +1,13 @@
+/*
+Basado en RetryPenca, pero separa la logica de los reintentos del cuerpo a
+ejecutar reintentando.
+
+Problema: Solo funciona con RuntimeExceptions y funciones que no retornan nada,
+por limitaciones de la interfaz Runnable.
+
+Mejoras: Ver RetryDecenteGenerico que soluciona dicho problema.
+*/
+
 import static java.lang.System.out;
 import static java.lang.Math.random;
 

@@ -1,3 +1,13 @@
+/*
+Basado en RetryDecenteGenerico. Usa method chaining para dejar explicito a que
+corresponden los parametros 10, GuateoException.class y 2000.
+
+Todo seria mucho mas bonito si el argumento de execute se pudiera escribir sin
+las lineas extras por el boilerplate de instanciar una clase anonima con un solo
+metodo para simular el paso de una funcion como parametro. Pero para arreglar
+eso habra que esperar a Java 7 y las closures.
+*/
+
 import static java.lang.System.out;
 import static java.lang.Math.random;
 

@@ -1,3 +1,12 @@
+/*
+Basado en RetryDecente, pero funciona con cualquier Exception y retornando
+valores.
+
+Problema: No es claro a que corresponden los parametros 10 y 2000. 
+
+Mejoras: Ver RetryCool que resuelve dicho problema.
+*/
+
 import static java.lang.System.out;
 import static java.lang.Math.random;
 

@@ -1,3 +1,16 @@
+/* 
+La solucion mas simple y obvia.
+
+Problema: se mezclan los problemas de invocar al servicio y de reintentar. Si
+hubiera que aplicar reintentos para otros servicios o funcionalidades habria que
+duplicar codigo.
+
+Mejoras: 
+
+ - RetryDecente: una abstraccion funcional.
+ - RetryFramework: una abstraccion con POO.
+*/
+
 import static java.lang.System.out;
 import static java.lang.Math.random;
 
