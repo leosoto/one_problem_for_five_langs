@@ -1,0 +1,9 @@
+Problema: Servicio que falla aleatoreamente. Para hacer las cosas difíciles,
+falla 4 veces de cada 5.
+
+Solucion: Invocar al servicio 10 veces (pero solo si el problema es especifico
+al servicio y no otras cosas como Ctrl+C u otras excepciones, o etc etc),
+esperando 2 segundos entre invocaciones. Si las 10 veces el asunto falla,
+propagar la excepcion.
+
+Peeeero: Que sea facil cambiar los parametros (x veces, y segundos)
