@@ -7,3 +7,14 @@ esperando 2 segundos entre invocaciones. Si las 10 veces el asunto falla,
 propagar la excepcion.
 
 Peeeero: Que sea facil cambiar los parametros (x veces, y segundos)
+
+Solucion ideal en pseudolenguaje:
+
+  def servicioPenca:
+    print "servicio invocado"
+    randomly raise SomeException  
+    print "servicio ejecutado exitosamente"
+  
+  def solucion:
+    retry servicioPenca 10 times when SomeException waiting 2 seconds
+
